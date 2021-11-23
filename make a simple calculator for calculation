@@ -1,0 +1,20 @@
+DECLARE
+   a number:=:a;
+   b number:=:b;
+   result number;
+   x char:=:operation;
+
+BEGIN
+   IF x='+' THEN
+     result:= a+b;
+   ELSIF x='-' THEN
+     result:= a-b;
+   ELSIF x='*' THEN
+     result:= a*b;
+   ELSIF x='/' THEN
+     result:= a/b;
+   ELSE
+     dbms_output.put_line('Invalid Operations');
+  END IF;
+dbms_output.put_line('Result='||result);
+END;
