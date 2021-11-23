@@ -1,0 +1,10 @@
+DECLARE
+   n number:=:range;
+BEGIN
+    dbms_output.put_line('First'||n||'numbers in reverse order are:');
+ loop
+    dbms_output.put_line(n);
+    n:=n-1;
+ EXIT when n<1;
+ END loop;
+END;
