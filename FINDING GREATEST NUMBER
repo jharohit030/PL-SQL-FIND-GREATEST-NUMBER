@@ -1,0 +1,14 @@
+DECLARE
+a number(3);
+b number(3);
+BEGIN
+    dbms_output.put_line('Enter value of a:');
+    a := :A;
+    dbms_output.put_line('Enter value of b:');
+    b := :B;
+ IF a>b THEN
+     dbms_output.put_line('Greatest number is:'||a);
+ ELSE
+     dbms_output.put_line('Greatest number is:'||b);
+ END IF;
+END;
