@@ -1,0 +1,13 @@
+DECLARE
+   num number(2);
+   i number(2);
+   fact number(4);
+BEGIN
+   fact:=1;
+   num:=:num;
+ for i in 1..num
+ loop
+  fact:=fact *i;
+ END loop;
+ dbms_output.put_line(fact);
+END;
