@@ -1,0 +1,12 @@
+DECLARE
+    a number:=1;
+    n number;
+BEGIN
+    dbms_output.put_line('Enter value of n:');
+    n := :n;
+ loop
+ dbms_output.put_line(a);
+ a:=a+1;
+ EXIT when a>n;
+ END loop;
+End;
