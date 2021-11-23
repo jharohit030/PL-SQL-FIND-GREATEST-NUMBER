@@ -1,0 +1,13 @@
+DECLARE  
+    n number:=:Enter_Table_Of;
+    i number:=1;
+    res number;
+BEGIN
+    dbms_output.put_line('Table of '||n);
+ while i<=10
+ loop
+   res:=n*i;
+   dbms_output.put_line(n||'*'||i||'='||res);
+   i:=i+1;
+ END loop;
+END;
